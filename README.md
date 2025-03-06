@@ -1,1 +1,2 @@
 # DA6401-Assignment-1
+This project involves the development and implementation of neural network architectures from fundamental principles using NumPy. The Fashion-MNIST dataset serves as the training and evaluation corpus. Comprehensive experiment tracking and results visualization are achieved through the integration of Weights & Biases (wandb.ai), facilitating detailed reporting and insightful analysis.
