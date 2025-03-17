@@ -2,7 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from keras.datasets import fashion_mnist
+# from keras.datasets import fashion_mnist
 import wandb
 
 class NeuralNetwork:
