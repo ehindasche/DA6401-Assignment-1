@@ -6,7 +6,7 @@ import seaborn as sns
 import wandb
 from sklearn.metrics import confusion_matrix
 from keras.datasets import fashion_mnist
-from NeuralNetwork import NeuralNetwork
+from Module_3 import NeuralNetwork
 
 # Initialize wandb
 wandb.init(project="fashion-mnist-numpy", name="confusion-matrix")
@@ -24,6 +24,8 @@ nn.add_layer(512, activation="relu")
 
 nn.train(X_train, train_labels, epochs=20, lr=0.01)
 test_preds = nn.predict(X_test)
+test_accuracy = np.mean(test_preds == test_labels)
+print(f'test accuracy: {test_accuracy}')
 # Create Confusion Matrix
 cm = confusion_matrix(test_labels, test_preds)
 
