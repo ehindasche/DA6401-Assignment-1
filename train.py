@@ -6,7 +6,7 @@ from keras.datasets import fashion_mnist
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from Module_3_fin import NeuralNetwork
+from NeuralNetwork import NeuralNetwork
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a neural network with specified hyperparameters.")
