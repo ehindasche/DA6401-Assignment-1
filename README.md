@@ -1,6 +1,8 @@
 # DA6401-Assignment-1
 This project involves the development and implementation of neural network architectures from fundamental principles using NumPy. The Fashion-MNIST dataset serves as the training and evaluation corpus. Comprehensive experiment tracking and results visualization are achieved through the integration of Weights & Biases (wandb.ai), facilitating detailed reporting and insightful analysis.
 
+**Report Link:** https://wandb.ai/eshan_kulkarni-indian-institute-of-technology-madras/fashion-mnist-numpy/reports/DA6401-Assignment-1--VmlldzoxMTcwNjQ1NA?accessToken=4ikfk15cx4kg0cn067e7wrnbnxhubaxbduyquy3twomub091dl7jxt802lb7r0jg
+
 ## Step 1
 Module1.py contains the code for Question 1 of the assignment. 
 
