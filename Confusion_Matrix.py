@@ -6,7 +6,7 @@ import seaborn as sns
 import wandb
 from sklearn.metrics import confusion_matrix
 from keras.datasets import fashion_mnist
-from Module_3 import NeuralNetwork
+from NeuralNetwork import NeuralNetwork
 
 # Initialize wandb
 wandb.init(project="fashion-mnist-numpy", name="confusion-matrix")
