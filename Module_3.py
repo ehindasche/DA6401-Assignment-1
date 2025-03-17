@@ -2,7 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from keras.datasets import fashion_mnist
+# from keras.datasets import fashion_mnist
 
 class NeuralNetwork:
     def __init__(self, input_size, output_size, optimizer='sgd', momentum = 0.9, beta=0.9, beta1 = 0.9, beta2=0.999, epsilon=1e-8, init_method='he', batch_size=32):
@@ -207,20 +207,20 @@ class NeuralNetwork:
 (train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
 
 # Preprocessing
-X_train = train_images.reshape(-1, 784).astype(np.float32) / 255.0 # dividing by 255.0 to normalize
-X_test = test_images.reshape(-1, 784).astype(np.float32) / 255.0 # reshaping the 28 x 28 pixel data to a flattened vector of length 784
+# X_train = train_images.reshape(-1, 784).astype(np.float32) / 255.0 # dividing by 255.0 to normalize
+# X_test = test_images.reshape(-1, 784).astype(np.float32) / 255.0 # reshaping the 28 x 28 pixel data to a flattened vector of length 784
 
-# Create and train network
-nn = NeuralNetwork(input_size=784, output_size=10, optimizer='momentum', momentum=0.8, beta=0.999, beta1=0.9, beta2=0.999, init_method='xavier', batch_size=32)
-nn.add_layer(512, activation='relu') 
-nn.add_layer(512, activation='relu')
-nn.add_layer(512, activation="relu")
+# # Create and train network
+# nn = NeuralNetwork(input_size=784, output_size=10, optimizer='momentum', momentum=0.8, beta=0.999, beta1=0.9, beta2=0.999, init_method='xavier', batch_size=32)
+# nn.add_layer(512, activation='relu') 
+# nn.add_layer(512, activation='relu')
+# nn.add_layer(512, activation="relu")
 
 
-nn.train(X_train, train_labels, epochs=20, lr=0.01)
+# nn.train(X_train, train_labels, epochs=20, lr=0.01)
 
-# Evaluate
-test_preds = nn.predict(X_test)
-accuracy = np.mean(test_preds == test_labels) # Scope for calculating F1-Score as well to get into better analytics
-# print(len(X_train))
-print(f"Test Accuracy: {accuracy:.4f}")
+# # Evaluate
+# test_preds = nn.predict(X_test)
+# accuracy = np.mean(test_preds == test_labels) # Scope for calculating F1-Score as well to get into better analytics
+# # print(len(X_train))
+# print(f"Test Accuracy: {accuracy:.4f}")
