@@ -15,4 +15,7 @@ confusion_matrix.py generates the confusion matrix. It uses code from the Module
 The file was run by training the NeuralNetwork on the best parameters obtained (mentioned in the report)
 
 ## Step 5
+The mnist.py file uses the sweep functionality to run sweeps based on only 3 parameters. This is mentioned in the report along with the charts attached.
+
+## Step 6
 The train.py file has been created such that we can give input values for various parameters and hyperparameters through command prompt while running to directly get the results. Train.py uses the NeuralNetwork.py file for implementing the Neural Network.
