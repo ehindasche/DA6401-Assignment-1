@@ -21,3 +21,12 @@ The mnist.py file uses the sweep functionality to run sweeps based on only 3 par
 
 ## Step 6
 The train.py file has been created such that we can give input values for various parameters and hyperparameters through command prompt while running to directly get the results. Train.py uses the NeuralNetwork.py file for implementing the Neural Network.
+
+# Functionality of every file
+
+## Module1.py:
+This file loads the Fashion-MNIST dataset, selects one sample image per class, logs these images and their labels to Weights & Biases (W&B) as a table, and saves the table as a W&B artifact. It visualizes a representative sample of each fashion item category in the dataset.
+
+## NeuralNetwork.py
+This contains the Neural Network class which is to be further used for wandb sweeps as well as for train.py. 
+**Initialization:** The __init__ method sets up the network's architecture, including input and output sizes, layer configurations, and optimization parameters.
