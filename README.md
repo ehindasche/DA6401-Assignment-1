@@ -11,7 +11,7 @@ NeuralNetwork.py contains code for Question 2-3. It contains code for the entire
 wandb.py contains code for sweep functionality. The charts obtained in Question 4-6 and also the ones for "MSE" in question 8 have been obtained through this.
 
 ## Step 4
-confusion_matrix.py generates the confusion matrix. It uses code from the NeuralNetwork.py file. (We can comment out the wandb.log in the NeuralNetwork while implementing this as well).
+confusion_matrix.py generates the confusion matrix. It uses code from the Module_3.py file.
 The file was run by training the NeuralNetwork on the best parameters obtained (mentioned in the report)
 
 ## Step 5
